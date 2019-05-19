@@ -1,0 +1,181 @@
+#!/usr/bin/env python
+# from robot import robot_position
+import robot
+robot.robot_position(20)
+message = "i love you"
+print(message)
+a = "i"
+b = "j"
+c = "k"
+print(a+b+c)
+print(5+3)
+number = ["one", "two", "three"]
+print(number)
+number.append("four")
+print(number)
+cars = ["bmw", "audi", "toyota", "subaru"]
+cars.sort()
+print(cars)
+magicians = ['a', 'b', 'c']
+for magician in magicians:
+    print(magician)
+    print(magician.title())
+print('hello_world')
+for value in range(1, 6):
+    print(value)
+number = list(range(1, 6))
+print(number)
+squares = []
+for value in range(1, 11):
+    square = value**2
+    squares.append(square)
+    print(squares)
+# million = list(range(1, 20000000))
+# print(sum(million))
+# 列表解析
+squares = [value**2 for value in range(1, 11)]
+print(squares)
+number = ["we", "ko", "lu", "gk"]
+for num in number[0:3]:
+    print(num)
+your_number = number[:]
+print(number)
+# 非切片复制,直接相当于同一列表
+my_number = number
+my_number.append("to")
+number.append("ku")
+print(number)
+team = (20, 10)
+for te in team:
+    print(te)
+print(team[0])
+to = "klt"
+if to != "opu":
+    print(to)
+# 用in和not in检查特定值是否在列表中
+if "ko" in number:
+    print(number)
+# if elif else,确定列表是否为空
+alien_0 = {"color": 'green', 'points': 5}
+print(alien_0['color'])
+print(alien_0['points'])
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+alien_0['x_position'] = alien_0['x_position'] + 5
+print(alien_0['x_position'])
+robot = {'size': "huge", 'shape': "circle", 'age': 12}
+for key, value in robot.items():
+    print(key, value)
+aliens = []
+for alien_number in range(0, 1):
+    new_alien = {'color': 'green', 'points': 5}
+    aliens.append(new_alien)
+if new_alien['color'] == 'green':
+    new_alien['color'] = 'yellow'
+    print(aliens)
+for alien_number in range(0, 30):
+    new_alien = {'color': 'green', 'points': 5}
+    aliens.append(new_alien)
+for alien in aliens[0:3]:
+    if new_alien['color'] == 'green':
+        new_alien['color'] = 'yellow'
+    print(alien)
+# message = input("hello")
+active = True
+while active:
+    if 5 > 0:
+
+        active = False
+        print(30)
+    else:
+        print(50)
+
+
+def greet_user(username):
+
+    print("hello"+username)
+
+
+greet_user('je')
+
+
+def describe_robot(robot_name, robot_type="listen"):
+    print(robot_name+robot_type)
+    return robot_name
+
+
+robot_second_name = describe_robot("ji_fu", "phonetic")
+print(robot_second_name)
+
+
+def greet_use(names):
+    """lie"""
+    for name in names:
+        mag = "hello"+name.title()+"!"
+        print(mag)
+
+
+user_names = ['hannah', 'ty', 'margot']
+greet_use(user_names)
+
+# 禁止修改函数列表
+# function_name(list_name[:])
+
+profile_w = {}
+
+
+def robot_message(first, last, **user_message):
+    """sop"""
+
+    profile_w['first_name'] = first
+    profile_w['last_name'] = last
+    for key_i, value_w in user_message.items():
+        profile_w[key_i] = value_w
+    return profile_w
+
+
+user_profile = robot_message('ld', 'po', poto='lri', pot='dok', pou='rop', rit='dps')
+print(user_profile)
+
+
+class Dog(object):
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sit(self):
+        print(self.name)
+
+    def roll_over(self):
+        print(self.name)
+
+    def update_odometer(self, next):
+        self.name = next
+
+
+my_name = Dog('tui', 90)
+print(my_name.name.title())
+print(my_name.age)
+myname.update_odometer('ou_oow')
+
+
+class SmallDog(Dog):
+
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+
+my_small_dog = SmallDog("ko", 90)
+print(my_small_dog.sit())
+
+
+
+
+
+
+
+
+
+
