@@ -1,0 +1,89 @@
+
+class Perceptron(object):
+    def __init__(self,input_num,activator)
+    self.activator=activator
+    self.weight=[0.0]*input_num//括号代表列表
+    self.bias=0.0
+
+  
+  def __str__(self)
+  return 'weight\t:%s\n bias\t:%f\n' % (self.weights,self.bias)//%输出
+ 
+ def predict(self,input_vec)://预测函数
+    return self.activator(VectorOp.dot(input_vec,self.weight)+self.bias))
+
+
+def __one__iteration(self,input_vecs,labels,iteration,rate)
+     samples=zip(input_vecs,labels)//??
+     for(input_vec,label) in samples
+        output=self.predict(input_vec,label,rate)
+       self._update_weights(input_vec,output,label,rate)
+
+ def _update_weight(input_vec,output,label,rate):
+       delta = label -output
+       self.weight=VectorOp.element_add(self.weight,scala_mutiply(input_vec,rate*delta))
+       self.bias+=rate*delta
+
+ def f(x):
+  return 1 if x>0 else 0
+     
+   def get_training_dataset():
+   input_vecs = [[1,1],[0,0],[1,0],[0,1]]//列表  map，list
+   labels=[1,0,0,0]
+   return input_vecs,labels
+
+   def train(self,input_vecs,labels,iteration,rate):
+   for i in range(iteration):
+      self.__one__iteration(input_vecs,labels,rate)
+
+  def train_and_perceptron():
+  p=Perceptron(2,f)//初始化类，在形参列表中可以放函数？
+  input_vecs,labels=get_training_dataset()  //直接定义吗,局部函数内的变量名相同？没有类型名
+  p.train(input_vecs,labels,10,0.1)
+  return p
+  
+  
+   if __name__ == '__main__':
+   and_perception = train_and_perceptron()
+   print(and_perception)
+  print ('1 and 1 = %d '% and_perceptron.predict([]))//直接由返回对象p调用predict，很多时候可以由类名直接调用？
+   
+  import Perceptron import Perceptron   
+  
+  class LinearUnit()
+     def __init__(self,input_num):
+       Perceptron.__init__(self,input_num,f)//import 类，所以直接用类名访问
+    
+
+     def get_training_dataset():
+     input_vecs = [[5],[3],[8],[1.4],[10.1]]
+     label[5500,2300,7600,1800,1140]
+     return input_vecs,label//返回时的书写方式不同
+
+     def train_linear_unit():
+     lu = LinearUnit(1)//命名对象
+     input_vecs,labels=get_training_dataset()
+     lu.train(input_vecs,labels,10,0.1)
+     return lu
+
+     def plot(linear_unit):
+     import matplotlib.pyplot as plt
+     input_vecs,labels=get_training_dataset()
+     fig=plt.figure()
+     ax=fig.add_subplot(111)
+     ax.scatter(map(lambda x:x[0],input_vecs),labels))
+     weights=linear_unit.weights
+     bias=linear_unis.bias
+     x=range(0,12,1)
+     y=map(lambda x:weight[0]*x+bias,x)//weights和input_vec对应，input_vecs二层的list
+     ax.plot(x,y)
+      plt.show()
+
+ 
+  
+  f=lambda x:x
+  if __name__=='__main__':
+     linear_unit = train_linear_unit()
+     print(linear_unit)
+     print('xsnauhd'%.2f%linear_unit.predict([3.4]))
+      plot(linear_unit)
